@@ -1,0 +1,104 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true"
+    CodeBehind="Site.Master.cs"
+    Inherits="HDFC_loans_tutorial1.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>HDFC Loans - Next Step to Dream</title>
+
+    <link href="content/site.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder
+        ID="HeadContent"
+        runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <div class="wrap">
+
+            <!-- Header -->
+            <div class="header">
+                <h1>HDFC Loans - Next Step to Dream</h1>
+            </div>
+
+            <!-- Logged-in user and logout -->
+            <div class="userbar">
+                Logged In:
+                <asp:Label
+                    ID="lblUser"
+                    runat="server">
+                </asp:Label>
+
+                <asp:Button
+                    ID="btnLogout"
+                    runat="server"
+                    Text="Logout"
+                    CssClass="btn"
+                    OnClick="btnLogout_Click" />
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav">
+
+                <asp:HyperLink
+                    ID="lnkHome"
+                    runat="server"
+                    NavigateUrl="~/home.aspx"
+                    Text="Home" />
+
+                <asp:HyperLink
+                    ID="lnkNew"
+                    runat="server"
+                    NavigateUrl="~/NewApplication.aspx"
+                    Text="New Application" />
+
+                <asp:HyperLink
+                    ID="lnkUpdate"
+                    runat="server"
+                    NavigateUrl="~/UpdateApplication.aspx"
+                    Text="Update Application" />
+
+                <asp:HyperLink
+                    ID="lnkRemove"
+                    runat="server"
+                    NavigateUrl="~/RemoveApplication.aspx"
+                    Text="Remove Application" />
+
+                <asp:HyperLink
+                    ID="lnkViewAll"
+                    runat="server"
+                    NavigateUrl="~/ViewAll.aspx"
+                    Text="View All" />
+
+            </div>
+
+            <!-- Page-specific content -->
+            <div class="content">
+
+                <asp:ContentPlaceHolder
+                    ID="MainContent"
+                    runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <h3>Contact Us:</h3>
+
+                <p>
+                    HDFC Loans Systems,<br />
+                    Mumbai, Maharashtra, India
+                </p>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>

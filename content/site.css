@@ -1,0 +1,116 @@
+﻿
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+    background-color: #f4f5f7;
+}
+
+/* Main application container */
+.wrap {
+    width: 92%;
+    max-width: 1050px;
+    margin: 22px auto;
+    background-color: #ffffff;
+    border: 1px solid #aaaaaa;
+}
+
+/* Header section */
+.header {
+    text-align: center;
+    padding: 18px;
+    background-color: #e7e7e7;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+    .header h1 {
+        margin: 0;
+        font-size: 26px;
+    }
+
+/* Logged-in user section */
+.userbar {
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+/* Navigation menu */
+.nav {
+    padding: 12px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+    .nav a {
+        margin-right: 18px;
+        color: #0645ad;
+        font-weight: bold;
+    }
+
+/* Main content section */
+.content {
+    padding: 20px;
+    min-height: 260px;
+}
+
+/* Footer section */
+.footer {
+    padding: 18px;
+    border-top: 1px solid #aaaaaa;
+    background-color: #eeeeee;
+}
+
+/* Form rows */
+.formrow {
+    margin: 10px 0;
+}
+
+    .formrow label {
+        display: inline-block;
+        width: 170px;
+        vertical-align: top;
+    }
+
+/* Text fields and dropdown lists */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 250px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 60px;
+}
+
+/* Buttons */
+.btn {
+    padding: 7px 14px;
+    margin: 5px 3px 5px 0;
+    cursor: pointer;
+}
+
+/* Validation and status messages */
+.msg {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.error {
+    color: #c00000;
+}
+
+.success {
+    color: #087b25;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+}
